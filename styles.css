@@ -55,6 +55,16 @@ body {
 a {
   color: inherit;
 }
+.spdr-caret {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  vertical-align: middle;
+  border-top: 4px solid currentColor;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent;
+  content: "";
+}
 
 .spdr-backgrounds-area {
   background-image: url("img-bg.jpg");
@@ -170,9 +180,9 @@ a {
 }
 .spdr-lists-a {
   background-color: white;
-  border: 1px solid #ccc;
+  border: 1px solid #e0e0e0;
   border-radius: 4px;
-  color: #972a25;
+  color: #c00000;
   min-width: calc(25% - 2px);
   white-space: nowrap;
   text-align: center;
@@ -181,8 +191,8 @@ a {
   padding: 0;
 }
 .spdr-lists-a-on {
-  background-image: linear-gradient(#b73a37, #972a25);
-  border: 0 solid;
+  background-image: linear-gradient(to bottom, #cb2a2f 0%, #a61a1d 100%);
+  border-color: #a61a1d;
   color: white;
   padding: 1px;
 }
