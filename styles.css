@@ -198,13 +198,14 @@ a {
   justify-content: space-around;
   margin: 50px 20px 0;
   flex-wrap: wrap;
+  padding-bottom: 150px;
 }
 .spdr-cards-item {
   width: 180px;
   border: 1px solid #b1b2b4;
   border-radius: 5px;
   background-color: #ffffff;
-  margin-bottom: 30px;
+  margin: 0 15px 30px;
 }
 .spdr-cards-item-row1 {
   color: #313541;
@@ -235,8 +236,22 @@ a {
   line-height: 1;
   text-align: right;
   margin: 0 -1px -1px -1px;
-  padding: 12px 23px 12px;
+  padding: 0 11px;
 }
+.spdr-cards-item-row4 .static-list-actions {
+  display: inline-block;
+  position: relative;
+}
+.spdr-cards-item-row4 .dropdown-toggle {
+  display: inline-block;
+  padding: 12px;
+}
+.spdr-cards-item-row4 .dropdown-menu {
+  font-size: initial;
+  text-align: left;
+  margin-top: -6px;
+}
+
 .spdr-cards-item-hr {
   border: 0 none;
   background-color: #979797;
