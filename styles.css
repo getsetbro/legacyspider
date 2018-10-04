@@ -213,6 +213,9 @@ a {
   font-weight: bold;
   line-height: 23px;
   margin: 16px 16px 12px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .spdr-cards-item-row2 {
   font-size: 18px;
