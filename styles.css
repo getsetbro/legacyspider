@@ -198,7 +198,7 @@ a {
   background-color: white;
   border: 1px solid #e0e0e0;
   border-radius: 4px;
-  color: #c00000;
+  color: #b62125;
   min-width: calc(25% - 2px);
   white-space: nowrap;
   text-align: center;
@@ -244,15 +244,13 @@ a {
   margin: 0 15px 30px;
 }
 .spdr-cards-item-row1 {
-  color: #313541;
+  color: #b62125;
   font-size: 18px;
   font-weight: bold;
   line-height: 23px;
   margin: 16px 16px 12px;
-  white-space: nowrap;
   overflow: hidden;
-  -o-text-overflow: ellipsis;
-  text-overflow: ellipsis;
+  height: 47px;
 }
 .spdr-cards-item-row2 {
   font-size: 18px;
