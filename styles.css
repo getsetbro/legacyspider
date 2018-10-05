@@ -1,6 +1,7 @@
 div,
 *::before,
 *::after {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -98,8 +99,14 @@ a {
   position: relative;
 }
 .spdr-top-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
   align-items: flex-start;
 }
 
@@ -129,6 +136,8 @@ a {
 }
 
 .spdr-search-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   max-width: 768px;
   margin: 35px auto 0;
@@ -146,6 +155,15 @@ a {
   font-size: inherit;
 }
 .spdr-search-btn {
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#fff),
+    to(#ddd)
+  );
+  background-image: -webkit-linear-gradient(#fff, #ddd);
+  background-image: -o-linear-gradient(#fff, #ddd);
   background-image: linear-gradient(#fff, #ddd);
   border: 1px solid #ced4da;
   border-left: 0;
@@ -165,10 +183,15 @@ a {
   max-width: 768px;
 }
 .spdr-lists-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   max-width: 768px;
   margin: 35px auto 0;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 .spdr-lists-a {
@@ -184,6 +207,15 @@ a {
   padding: 0;
 }
 .spdr-lists-a-on {
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#cb2a2f),
+    to(#a61a1d)
+  );
+  background-image: -webkit-linear-gradient(top, #cb2a2f 0%, #a61a1d 100%);
+  background-image: -o-linear-gradient(top, #cb2a2f 0%, #a61a1d 100%);
   background-image: linear-gradient(to bottom, #cb2a2f 0%, #a61a1d 100%);
   border-color: #a61a1d;
   color: white;
@@ -194,9 +226,13 @@ a {
   margin-left: 0;
 }
 .spdr-cards-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: distribute;
   justify-content: space-around;
   margin: 50px 20px 0;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   padding-bottom: 150px;
 }
@@ -215,6 +251,7 @@ a {
   margin: 16px 16px 12px;
   white-space: nowrap;
   overflow: hidden;
+  -o-text-overflow: ellipsis;
   text-overflow: ellipsis;
 }
 .spdr-cards-item-row2 {
